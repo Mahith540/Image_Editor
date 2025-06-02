@@ -6,7 +6,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk
 
-# === Image Processing Functions ===
+
 def light_denoise(img):
     return cv2.fastNlMeansDenoisingColored(img, None, 3, 3, 5, 15)
 
@@ -53,7 +53,7 @@ def save_comparison(original, edited, output_path):
     combined.paste(edited_pil, (orig_pil.width, 0))
     combined.save(output_path)
 
-# === GUI Application ===
+
 def process_image(file_path, mode):
     try:
         img = cv2.imread(file_path)
@@ -91,7 +91,7 @@ def open_file():
     result_label.config(text="Processing...", foreground="blue")
     root.after(100, lambda: process_image(file_path, selected_mode))
 
-# === Build GUI ===
+
 root = tk.Tk()
 root.title("Image Enhancer (iPhone 16 Pro Max Style)")
 root.geometry("600x600")
