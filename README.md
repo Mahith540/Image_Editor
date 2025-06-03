@@ -1,4 +1,4 @@
-# 📷 AI-Powered Image Enhancer (iPhone 16 Pro Max Style)
+# 📷 AI-Powered Image Enhancer (iPhone Style)
 
 A user-friendly, GUI-based image editing app built with Python. This tool enhances and upscales any image to look like it was taken with an iPhone 16 Pro Max – sharp, vibrant, and polished.
 
